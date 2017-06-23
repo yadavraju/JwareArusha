@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/bg_info_window"
+    android:textAlignment="center"
+    android:layout_height="wrap_content"
+    android:text="@string/you_are_here"
+    android:maxEms="10"
+    android:paddingLeft="10dp"
+    android:id="@+id/tv_info_title"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:textColor="@color/white" />

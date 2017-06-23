@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_udated_by"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp">
+
+    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaSemiBold
+        android:id="@+id/tv_updated_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_grey"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:text="@string/text_updated_by"
+        android:textColor="@color/txt_black"
+        android:textSize="16sp" />
+
+    <com.jwareconsulting.arusha.ui.fonts.MonsterratRegularTexView
+        android:id="@+id/tv_author_title"
+        tools:text="Jobex Burea de Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_updated_by"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/txt_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/tv_author_title"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        tools:text="+255 688 96 96 69dfsdfdffsfdfdsfsdfsfsdfsafsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_author_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/iv_map"
+        android:layout_toRightOf="@id/iv_call"
+        android:ellipsize="end"
+        android:textColor="@color/txt_black" />
+
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/tv_author_title"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+
+        android:id="@+id/iv_map"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/tv_author_title"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/view_center"
+        android:src="@drawable/ic_marker" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        tools:text="First floor Nijro Complex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_author_title"
+        android:layout_toRightOf="@id/iv_map"
+        android:ellipsize="end"
+        android:paddingLeft="5dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/txt_black" />
+</RelativeLayout>

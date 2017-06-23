@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        signingConfigs {
+            keyAlias 'arusha'
+            keyPassword 'arusha'
+            storeFile file('/Volumes/Macintosh HD/Users/anjulkhanal/Google Drive/View9/arusha.jks')
+            storePassword 'arusha'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.jwareconsulting.arusha"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 20
+        versionName '1.1'
+        multiDexEnabled true
+//        signingConfig signingConfigs.newSigningConfig
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+    lintOptions {
+//ignore errors for release build
+        checkReleaseBuilds false
+        // set to true to turn off analysis progress reporting by lint
+        quiet true
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.signingConfigs
+        //    debuggable true
+        }
+    }
+    repositories {
+        jcenter()
+    }
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-core:9.0.2'
+    //    compile 'com.google.firebase:firebase-ads:9.4.0'
+    compile 'com.google.android.gms:play-services:9.0.2'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.intuit.sdp:sdp-android:1.0.3'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4+'
+    compile 'com.google.android.gms:play-services-ads:9.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+}
+apply plugin: 'com.google.gms.google-services'

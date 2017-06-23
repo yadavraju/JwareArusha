@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Arusha</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--activity titles-->
+    <string name="activity_title_landing">JWare Arusha </string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Text to be converted conveted English file-->
+    <!--Text to be converted conveted English file-->
+    <string name="activity_exchange_rate">Taux de Change</string>
+    <string name="text_map">Carte</string>
+    <string name="text_directory">Sommaire </string>
+    <string name="text_events">Événements</string>
+    <string name="activity_directory">Sommaire </string>
+    <string name="drawer_home">Acceuil</string>
+    <string name="drawer_map">Carte</string>
+    <string name="drawer_events">Événements</string>
+    <string name="drawer_top_10_things">Top des Choses à faire</string>
+    <string name="text_change_language">Changer de langue</string>
+    <string name="text_change_language_small">Changer de langue</string>
+    <string name="text_msg_facebook">Nous envoyer un message sur Facebook</string>
+    <string name="text_share_app">Partager l\'application</string>
+    <string name="drawer_diretory">Sommaire </string>
+    <string name="text_currency">DEVISE</string>
+    <string name="text_buy">ACHETER</string>
+    <string name="text_sell">VENDRE</string>
+    <string name="text_updated_by">Mis à jour le </string>
+    <string name="text_currency_title">Top 10 des Choses à faire</string>
+    <string name="text_search">Recherche</string>
+    <string name="are_you_sure">Êtes-vous sûr de vouloir changer la langue ?</string>
+    <string name="button_ok">D\'accord</string>
+    <string name="cancel">Annuler</string>
+
+    <!--Text to be converted conveted English file-->
+
+
+
+    <string name="text_hint_direct">Type Name or Choose Category</string>
+    <string name="fragment_title_map">Map</string>
+    <string name="fragment_title_events">Events</string>
+    <string name="email_subject">JWare Arusha Email Message</string>
+
+    <string name="proxima_font_light">ProximaNova-Light.otf</string>
+    <string name="proxima_font_semi_bold">proximanova_semibold.otf</string>
+    <string name="proxima_font_regular">ProximaNova-Regular.otf</string>
+    <string name="proxima_font_bold">ProximaNova-Bold.otf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="you_are_here">You are Here</string>
+    <string name="server_error">Server Error</string>
+    <string name="error">Error</string>
+    <string name="no_data">No Data Available</string>
+    <string name="email_body">This message is being sent from the JWare Arusha App. Please provide your comments below:</string>
+    <string name="no_cache_data">No Cache Data Available</string>
+    <string name="no_internet_connected">No Internet Connection</string>
+    <string name="no_internet_detail">You are offline please check your internet connection</string>
+    <string name="viber_not_installed">Viber not Installed</string>
+    <string name="whatsapp_not_installed">WhatsApp not installed</string>
+
+
+</resources>

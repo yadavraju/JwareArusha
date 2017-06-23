@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "769659426885",
+    "firebase_url": "https://ausha-androidapp.firebaseio.com",
+    "project_id": "ausha-androidapp",
+    "storage_bucket": "ausha-androidapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769659426885:android:57252959feab858d",
+        "android_client_info": {
+          "package_name": "com.jwareconsulting.arusha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769659426885-l0689igib88grre5ld5u3li0gcgg4s44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnk9KkzA2BgQ5OW0jJgTURJGez9UqyVrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1 "
+}

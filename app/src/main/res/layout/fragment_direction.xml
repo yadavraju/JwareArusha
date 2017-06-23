@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_location"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/blue_1">
+
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/direction_margin_left"
+                android:text="@string/label_from"
+                android:textColor="@color/white" />
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_start_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/direction_location_margin_left"
+                android:layout_marginRight="@dimen/direction_location_margin_right"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"
+                android:hint="@string/label_your_location"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_cross"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp" />
+
+            <!--android:src="@drawable/ic_close"-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_destination"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_2">
+
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/direction_margin_left"
+                android:text="@string/label_to"
+                android:textColor="@color/white" />
+
+            <AutoCompleteTextView
+                android:id="@+id/tv_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/direction_location_margin_left"
+                android:layout_marginRight="@dimen/direction_location_margin_right"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"
+                android:hint="@string/label_type_destination_location"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map_catagory"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_distance_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom">
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:alpha="0.5"
+             android:background="@color/white" />
+ -->
+        <com.jwareconsulting.arusha.ui.fonts.ProximaNovaSemiBold
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/direction_margin_left"
+            android:textColor="@color/colorPrimary" />
+
+        <com.jwareconsulting.arusha.ui.fonts.ProximaNovaSemiBold
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_time"
+            android:textColor="@color/bg_border_grey" />
+
+    </RelativeLayout>
+</FrameLayout>

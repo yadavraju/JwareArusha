@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Arusha</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--activity titles-->
+    <string name="activity_title_landing">JWare Arusha </string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Text to be converted conveted English file-->
+    <string name="activity_exchange_rate">Evenementen</string>
+    <string name="text_map">Kaart</string>
+    <string name="text_directory">Inhoudsopgave</string>
+    <string name="text_events">Evenementen</string>
+    <string name="activity_directory">Inhoudsopgave</string>
+    <string name="drawer_home">Home</string>
+    <string name="drawer_map">Kaart</string>
+    <string name="drawer_events">Evenementen</string>
+    <string name="drawer_top_10_things">Top dingen om te doen</string>
+    <string name="text_change_language">taal wijzigen</string>
+    <string name="text_change_language_small">taal wijzigen</string>
+    <string name="text_msg_facebook">Stuur een bericht op facebook</string>
+    <string name="text_share_app">Deel onze app</string>
+    <string name="drawer_diretory">Inhoudsopgave</string>
+    <string name="text_currency">VALUTA</string>
+    <string name="text_buy">KOPEN</string>
+    <string name="text_sell">VERKOPEN</string>
+    <string name="text_updated_by">UPDATE DOOR</string>
+    <string name="text_currency_title">Wisselkoersen Tanzaniaanse Shilling vanaf..</string>
+    <string name="text_search">Zoek</string>
+    <string name="are_you_sure">Weet je zeker wilt Taal veranderen?</string>
+    <string name="button_ok">Ok</string>
+    <string name="cancel">Annuleer</string>
+    <!--Text to be converted conveted English file-->
+
+
+
+    <string name="text_hint_direct">Type Name or Choose Category</string>
+    <string name="fragment_title_map">Map</string>
+    <string name="fragment_title_events">Events</string>
+    <string name="email_subject">JWare Arusha Email Message</string>
+
+    <string name="proxima_font_light">ProximaNova-Light.otf</string>
+    <string name="proxima_font_semi_bold">proximanova_semibold.otf</string>
+    <string name="proxima_font_regular">ProximaNova-Regular.otf</string>
+    <string name="proxima_font_bold">ProximaNova-Bold.otf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="you_are_here">You are Here</string>
+    <string name="server_error">Server Error</string>
+    <string name="error">Error</string>
+    <string name="no_data">No Data Available</string>
+    <string name="email_body">This message is being sent from the JWare Arusha App. Please provide your comments below:</string>
+    <string name="no_cache_data">No Cache Data Available</string>
+    <string name="no_internet_connected">No Internet Connection</string>
+    <string name="no_internet_detail">You are offline please check your internet connection</string>
+    <string name="viber_not_installed">Viber not Installed</string>
+    <string name="whatsapp_not_installed">WhatsApp not installed</string>
+
+
+</resources>

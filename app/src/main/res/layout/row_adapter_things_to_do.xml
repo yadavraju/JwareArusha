@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_grey">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:background="@color/bg_grey"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/r1_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_image"
+                android:layout_toRightOf="@+id/iv_image">
+
+                <com.jwareconsulting.arusha.ui.view.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Chinese Whispers"
+                    android:textColor="@color/txt_black"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    customfontdemo:fontName="@string/proxima_font_regular" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/tv_event_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_phone"
+                        android:src="@drawable/ic_phone_call" />
+
+                    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaLight
+                        android:id="@+id/tv_phone"
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_event_phone"
+                        android:text="+255 688 96 96 69" />
+
+                    <ImageView
+                        android:id="@+id/tv_event_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_price"
+                        android:src="@drawable/ic_place" />
+
+                    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaLight
+                        android:id="@+id/tv_price"
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_phone"
+                        android:layout_toRightOf="@id/tv_event_phone"
+                        android:text="First Floor Nijro Complex" />
+
+                    <ImageView
+                        android:id="@+id/tv_event_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_time"
+                        android:src="@drawable/ic_time" />
+
+                    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaLight
+                        android:id="@+id/tv_time"
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_price"
+                        android:layout_toRightOf="@id/tv_event_phone"
+                        android:text="N/A" />
+
+                    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaLight
+                        android:id="@+id/tv_extra_description"
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_time"
+                        tools:text="extra description" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

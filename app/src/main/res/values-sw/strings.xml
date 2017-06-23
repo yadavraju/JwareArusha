@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Arusha</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--activity titles-->
+    <string name="activity_title_landing">JWare Arusha </string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Text to be converted conveted English file-->
+    <string name="activity_exchange_rate">Eneo la Kubadili Hela ya Kigeni</string>
+    <string name="text_map">Ramani</string>
+    <string name="text_directory">Muongozo</string>
+    <string name="text_events">Matukio</string>
+    <string name="activity_directory">Muongozo</string>
+    <string name="drawer_home">Nyumbani</string>
+    <string name="drawer_map">Ramani</string>
+    <string name="drawer_events">Matukio</string>
+    <string name="drawer_top_10_things">Vitu Muhimu vya Kufanya</string>
+    <string name="text_change_language">Badili Lugha</string>
+    <string name="text_change_language_small">Badili Lugha</string>
+    <string name="text_msg_facebook">Tuandikie kwenye Facebook</string>
+    <string name="text_share_app">Shiriki maombi yetu</string>
+    <string name="drawer_diretory">Muongozo</string>
+    <string name="text_currency">fedha</string>
+    <string name="text_buy">kununua</string>
+    <string name="text_sell">kUUZA</string>
+    <string name="text_updated_by">Updated KWA</string>
+    <string name="text_currency_title">Tanzania Shilingi Exchange Rate kama ya</string>
+    <string name="text_search">tafuta</string>
+    <string name="are_you_sure">Una uhakika unataka kubadilisha lugha?</string>
+    <string name="button_ok">Sawa</string>
+    <string name="cancel">kufuta</string>
+    <string name="text_hint_direct">Aina Jina au Chagua Jamii</string>
+
+    <!--Text to be converted conveted English file-->
+
+
+    <string name="fragment_title_map">Map</string>
+    <string name="fragment_title_events">Events</string>
+    <string name="email_subject">JWare Arusha Email Message</string>
+
+    <string name="proxima_font_light">ProximaNova-Light.otf</string>
+    <string name="proxima_font_semi_bold">proximanova_semibold.otf</string>
+    <string name="proxima_font_regular">ProximaNova-Regular.otf</string>
+    <string name="proxima_font_bold">ProximaNova-Bold.otf</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="you_are_here">You are Here</string>
+    <string name="server_error">Server Error</string>
+    <string name="error">Error</string>
+    <string name="no_data">No Data Available</string>
+    <string name="email_body">This message is being sent from the JWare Arusha App. Please provide your comments below:</string>
+    <string name="no_cache_data">No Cache Data Available</string>
+    <string name="no_internet_connected">No Internet Connection</string>
+    <string name="no_internet_detail">You are offline please check your internet connection</string>
+    <string name="viber_not_installed">Viber not Installed</string>
+    <string name="whatsapp_not_installed">WhatsApp not installed</string>
+
+
+</resources>

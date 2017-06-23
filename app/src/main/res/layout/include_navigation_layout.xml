@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_navigation_left">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:paddingTop="70dp">
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_home"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/drawer_home"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_map"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_map"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_directory"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_diretory"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_events"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_events"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_exchange_rate"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_exchange_rate"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_top_ten_things"
+                style="@style/NavigationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_top_10_things"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:alpha="0.25"
+                android:background="@color/white" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_change_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/text_change_language"
+                android:textColor="@color/white"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jwareconsulting.arusha.ui.view.RadioGroupPlus
+                    android:id="@+id/radio_group_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_eng"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="ENG"
+                        android:fontFamily="@string/proxima_font_bold"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_swa"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="SWA"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+                    <RadioButton
+                        android:id="@+id/rb_fra"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="FRA"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+                    <RadioButton
+                        android:id="@+id/rb_deu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="DEU"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+<!--                    <RadioButton
+                        android:id="@+id/rb_eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENG"
+                        android:button="@drawable/language_selector_eng" />
+
+                    <RadioButton
+                        android:id="@+id/rb_swa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:button="@drawable/language_selector_swa" />
+
+                    <RadioButton
+                        android:id="@+id/rb_fra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_fra" />
+                    <RadioButton
+                        android:id="@+id/rb_deu"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_deu" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_dut"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="NL"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rb_spa"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="SPA"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+                    <RadioButton
+                        android:id="@+id/rb_chn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="中文"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+                    <RadioButton
+                        android:id="@+id/rb_ita"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rbtn_selector"
+                        android:button="@null"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="ITA"
+                        android:textColor="@drawable/rbtn_textcolor_selector" />
+
+<!--                    <RadioButton
+                        android:id="@+id/rb_dut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_dut" />
+
+                    <RadioButton
+                        android:id="@+id/rb_spa"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_spa" />
+
+                    <RadioButton
+                        android:id="@+id/rb_chn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_ch" />
+                    <RadioButton
+                        android:id="@+id/rb_ita"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/language_selector_ita" />-->
+                </LinearLayout>
+
+                </com.jwareconsulting.arusha.ui.view.RadioGroupPlus>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:alpha="0.25"
+                android:background="@color/white" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                android:id="@+id/tv_email_us"
+                style="@style/NavigationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_msg_facebook"
+                customfontdemo:fontName="@string/proxima_font_regular" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingLeft="16dp">
+
+                <ImageView
+                    android:id="@+id/img_fb"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/fb_icon" />
+                <com.jwareconsulting.arusha.ui.view.CustomTextView
+                    android:id="@+id/tv_share_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/img_fb"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:text="@string/text_share_app"
+                    customfontdemo:fontName="@string/proxima_font_regular" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

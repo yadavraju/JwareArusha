@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <!--<com.goka.kenburnsview.KenBurnsView-->
+        <!--android:id="@+id/ken_burns_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <!--<FrameLayout-->
+        <!--android:id="@+id/view_pager_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_selectlanguage"
+            android:layout_width="95dp"
+            android:layout_height="276dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.80"
+                android:background="@drawable/ripple_tile" />
+
+            <ImageView
+                android:id="@+id/iv_change_language_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/view3"
+                android:layout_below="@+id/iv_change_language_back">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.jwareconsulting.arusha.ui.view.RadioGroupPlus
+                    android:id="@+id/radio_group_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_eng"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="ENG"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                        <RadioButton
+                            android:id="@+id/rb_swa"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="SWA"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+<!--                        <RadioButton
+                            android:id="@+id/rb_eng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/language_selector_eng" />
+
+                        <RadioButton
+                            android:id="@+id/rb_swa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:button="@drawable/language_selector_swa" />-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/top1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+<!--                        <RadioButton
+                            android:id="@+id/rb_dut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/language_selector_dut" />
+
+                        <RadioButton
+                            android:id="@+id/rb_spa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:button="@drawable/language_selector_spa" />-->
+
+                        <RadioButton
+                            android:id="@+id/rb_dut"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="NL"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                        <RadioButton
+                            android:id="@+id/rb_spa"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="SPA"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/top2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_chn"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:button="@drawable/language_selector_ch" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_ita"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:button="@drawable/language_selector_ita" />-->
+                        <RadioButton
+                            android:id="@+id/rb_chn"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="中文"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                        <RadioButton
+                            android:id="@+id/rb_ita"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="ITA"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/top3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_fra"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="FRA"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+                        <RadioButton
+                            android:id="@+id/rb_deu"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="DEU"
+                            android:fontFamily="@string/proxima_font_bold"
+                            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_fra"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:button="@drawable/language_selector_fra" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rb_deu"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:button="@drawable/language_selector_deu" />-->
+                    </LinearLayout>
+                </com.jwareconsulting.arusha.ui.view.RadioGroupPlus>
+            </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="@string/text_change_language_small"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tile_share"
+            android:layout_width="95dp"
+            android:layout_height="135dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.80"
+                android:background="@drawable/ripple_tile" />
+
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_share_app"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/img" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/fb_icon"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_align"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/tile_language"
+            android:layout_width="95dp"
+            android:layout_height="135dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tile_share"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.80"
+                android:background="@drawable/ripple_tile" />
+
+<!--            <ImageView
+                android:id="@+id/iv_change_language"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:src="@drawable/ic_lang_en_active" />-->
+
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_change_language"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_change_language_small"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true" />
+
+            <com.jwareconsulting.arusha.ui.view.CustomTextView
+                customfontdemo:fontName="@string/proxima_font_regular"
+                android:id="@+id/iv_change_language"
+                android:layout_width="40dp"
+                android:background="@drawable/circle_text_view"
+                android:layout_height="40dp"
+                android:text="ENG"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+        <com.jwareconsulting.arusha.ui.view.HorizontalTileView
+            android:id="@+id/hv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view_align"
+            android:layout_toStartOf="@+id/view_align"
+            app:id="@id/hv_map"
+            app:tile_icon="@drawable/map_icon"
+            app:tile_title="@string/drawer_map" />
+
+        <com.jwareconsulting.arusha.ui.view.HorizontalTileView
+            android:id="@+id/hv_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hv_map"
+            android:layout_toLeftOf="@+id/view_align"
+            android:layout_toStartOf="@+id/view_align"
+            app:id="@id/hv_directory"
+            app:tile_icon="@drawable/search_icon"
+            app:tile_title="@string/activity_directory" />
+
+        <com.jwareconsulting.arusha.ui.view.HorizontalTileView
+            android:id="@+id/hv_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hv_directory"
+            android:layout_toLeftOf="@+id/view_align"
+            android:layout_toStartOf="@+id/view_align"
+            app:id="@id/hv_events"
+            app:tile_icon="@drawable/calendar_icon"
+            app:tile_title="@string/drawer_events" />
+
+        <com.jwareconsulting.arusha.ui.view.HorizontalTileView
+            android:id="@+id/hv_exchange_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hv_events"
+            android:layout_toLeftOf="@+id/view_align"
+            android:layout_toStartOf="@+id/view_align"
+            app:id="@id/hv_exchange_rate"
+            app:tile_icon="@drawable/exchange_rate"
+            app:tile_title="@string/activity_exchange_rate" />
+
+        <RelativeLayout
+
+            android:layout_below="@id/hv_exchange_rate"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:layout_marginRight="6.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:id="@+id/hv_top_tenthings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.80"
+                android:background="@drawable/ripple_tile"
+                android:clickable="true"
+                />
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <com.jwareconsulting.arusha.ui.fonts.ProximaNovaRegular
+                android:id="@+id/tv_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/drawer_top_10_things"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+<!--        <jwareconsultingconsulting.arusha.ui.view.HorizontalTileView
+            android:id="@+id/hv_top_tenthings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hv_exchange_rate"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            app:id="@id/hv_top_tenthings"
+            app:tile_icon="@null"
+            app:tile_title="@string/drawer_top_10_things" />-->
+
+    </RelativeLayout>
+</RelativeLayout>

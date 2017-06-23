@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.8"
+        android:background="@color/colorPrimary" />
+
+    <com.jwareconsulting.arusha.ui.fonts.ProximaNovaSemiBold
+        android:id="@+id/tv_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:textColor="@color/white"
+        tools:text="Search item" />
+
+</FrameLayout>
